@@ -8,7 +8,7 @@ import pl.sda.demo.dto.UserDto;
 
 @Controller
 @RequiredArgsConstructor
-public class users {
+public class UserController {
 
     private final pl.sda.demo.service.UserService UserService;
 
@@ -17,6 +17,6 @@ public class users {
     public String users(Model model) {
         model.addAttribute("users",UserService.findAll());
         model.addAttribute("user", UserDto.builder().build());
-        return "users";
+        return "UserController";
     }
 }

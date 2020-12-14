@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class CLIENT {
+public class ClientFormController {
 
     @Secured({"ROLE_ADVISOR", "CLIENT"})
     @GetMapping("/client")

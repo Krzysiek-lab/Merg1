@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import pl.sda.demo.Configuration.Configuration;
 
 @SpringBootApplication
-@EntityScan("pl.sda.apka.model")
-@EnableJpaRepositories("pl.sda.demo.Repository")
+@EntityScan("pl.sda.demo.model")
+@EnableJpaRepositories("pl.sda.demo.repository")
 @Import(Configuration.class)
 public class DemoApplication {
 

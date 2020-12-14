@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.sda.demo.model.User;
-import pl.sda.demo.Repository.RoleRepository;
+import pl.sda.demo.repository.RoleRepository;
 import pl.sda.demo.dto.UserDto;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserService {
 
-    private final pl.sda.demo.Repository.UserRepository UserRepository;
+    private final pl.sda.demo.repository.UserRepository UserRepository;
 
     @Autowired
     private final RoleRepository roleRepository;

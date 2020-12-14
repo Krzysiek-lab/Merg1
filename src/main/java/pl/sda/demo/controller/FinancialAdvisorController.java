@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ADVISOR {
+public class FinancialAdvisorController {
 
     @Secured("ROLE_ADVISOR")
     @GetMapping("/advisor")

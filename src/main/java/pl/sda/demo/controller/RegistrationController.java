@@ -14,7 +14,7 @@ import javax.validation.Valid;
 
 @Controller
 @RequiredArgsConstructor
-public class Registration {
+public class RegistrationController {
 
     private final UserService UserService;
 
